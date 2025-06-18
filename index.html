@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projeto Hora de Aventura - Login e CRUD</title>
+  <link rel="stylesheet" href="image.css" />
+</head>
+<body>
+  <div id="login-section" class="section">
+    <h2>Login</h2>
+    <form id="login-form">
+      <input type="text" id="login-username" placeholder="Usuário" required />
+      <input type="password" id="login-password" placeholder="Senha" required />
+      <button type="submit">Entrar</button>
+    </form>
+    <p>Não tem conta? <button id="show-register">Cadastre-se</button></p>
+    <p id="login-error" class="error"></p>
+  </div>
+
+  <div id="register-section" class="section hidden">
+    <h2>Cadastro</h2>
+    <form id="register-form">
+      <input type="text" id="register-username" placeholder="Usuário" required />
+      <input type="password" id="register-password" placeholder="Senha" required />
+      <input type="password" id="register-password-confirm" placeholder="Confirme a senha" required />
+      <button type="submit">Cadastrar</button>
+    </form>
+    <p>Já tem conta? <button id="show-login">Faça login</button></p>
+    <p id="register-error" class="error"></p>
+  </div>
+
+  <div id="app-section" class="section hidden">
+    <h2>Bem-vindo, <span id="user-name"></span>!</h2>
+    <button id="logout-btn">Sair</button>
+
+  <section id="image-crud">
+  <h2>Gerenciar Imagens do Carrossel</h2>
+  <form id="image-form">
+    <input type="text" id="image-url" placeholder="URL da imagem" required>
+    <button type="submit">Adicionar Imagem</button>
+  </form>
+  <ul id="image-list"></ul>
+</section>
+
+    <h3>Carrossel Hora de Aventura</h3>
+    <div class="carousel" id="carousel">
+      <div class="carousel-track" id="track">
+        <div class="carousel-slide"><img src="Imagens/Marceline.jpg" alt="Marceline" /></div>
+        <div class="carousel-slide"><img src="Imagens/Simon.jpg" alt="Simon" /></div>
+        <div class="carousel-slide"><img src="Imagens/BMO - Adventure Time.jpg" alt="BMO" /></div>
+        <div class="carousel-slide"><img src="Imagens/Jake.jpg" alt="Jake" /></div>
+        <div class="carousel-slide"><img src="Imagens/Finn.jpg" alt="Finn" /></div>
+        <div class="carousel-slide"><img src="Imagens/Jubs.jpg" alt="Princesa Jujuba" /></div>
+        <div class="carousel-slide"><img src="Imagens/bonniemacarrão.jpg" alt="Bonnie" /></div>
+        <div class="carousel-slide"><img src="Imagens/bubbline.jpg" alt="bubbline" /></div>
+        <div class="carousel-slide"><img src="Imagens/Bonnie (3).jpg" alt="Bonnie" /></div>
+        <div class="carousel-slide"><img src="Imagens/Bonnie.jpg" alt="Bonnie" /></div>
+        <div class="carousel-slide"><img src="Imagens/marcejuju.jpg" alt="meandbonnie" /></div>
+        <div class="carousel-slide"><img src="Imagens/marceline-and-princess-bubblegum.jpg" alt="meandbonnie" /></div>
+        <div class="carousel-slide"><img src="Imagens/meandbonnie.jpg" alt="meandbonnie" /></div>
+        <div class="carousel-slide"><img src="Imagens/winter-king.jpg" alt="winter king" /></div>
+        <div class="carousel-slide"><img src="Imagens/Noitedefilmes.jpg" alt="Noite de filmes" /></div>
+        <div class="carousel-slide"><img src="Imagens/selfiebonnie.jpg" alt="Bonnie" /></div>
+      </div>
+  <button class="carousel-button next">❮</button> <!-- vai para o slide anterior -->
+  <button class="carousel-button prev">❯</button> <!-- vai para o slide seguinte -->
+    </div>
+    <div class="carousel-nav" id="nav"></div>
+  </div>
+
+  <script src="Corpo.js"></script>
+</body>
+</html>
